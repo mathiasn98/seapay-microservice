@@ -1,4 +1,6 @@
  # Seapay
+
+ ## Description
  
 Seapay is a fintech app consists of 4 different services
   - API gateway
@@ -20,23 +22,33 @@ The project itself has 4 modules
  - seapay-monolith
    - an entry point of our monolithic app, including all handlers
   
- # How to use
+  ## Installation
 
- ### Dependencies
- ```
- brew cask install java
- ```
+  ### Prerequisites
+  #### Java >v8
+  [Install](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
+  #### PostgreSQL v10
+  [Install](https://www.postgresql.org/download/)
+  
+  Install postgres in Ubuntu
+  ```
+  sudo apt-get install postgresql postgresql-contrib
+  ```
 
- ### How to build
+  ### How to build from scratch
+  ```
+  make all
+  ```
 
- ```
- make all
- ```
+  ### How to run
+  ```
+  make run
+  ```
 
- ### How to run
- ```
- make run
- ```
+  ### How to build
+  ```
+  make build
+  ```
 
   
 
